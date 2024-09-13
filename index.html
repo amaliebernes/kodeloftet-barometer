@@ -8,14 +8,14 @@
     <script type="module" src="index.js"></script>
   </head>
   <body>
-    <h1 class="raised padding-medium">Kodeloftets Barometer</h1>
+    <h1 class="sunken raised padding-medium">Kodeloftets Barometer</h1>
 
     <p>Hvilken enhet er du mest på?</p>
 
-    <div>
-      <button class="bg-green text-large padding-medium rounded raised" id="button-a">Kontor</button>
-      <button class="bg-green text-large padding-medium rounded raised" id="button-b">Media</button>
-      <button class="bg-green text-large padding-medium rounded raised" id="button-c">Kjøkken</button>
+    <div class="flex-column gap-small">
+      <button class="active:sunken hover:brighten bg-color-a text-large padding-medium rounded raised" id="button-a">Kontor</button>
+      <button class="active:sunken hover:brighten bg-color-b text-large padding-medium rounded raised" id="button-b">Media</button>
+      <button class="active:sunken hover:brighten bg-color-c text-large padding-medium rounded raised" id="button-c">Kjøkken</button>
     </div>
 
     <a id="result-link">Resultat</a>

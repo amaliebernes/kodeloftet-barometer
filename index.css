@@ -11,14 +11,26 @@ button {
 
 */
 
-.bg-green {
+:root {
 
-  background-color: rgb(168, 236, 168);
+  --color-choice-a: rgb(180, 42, 42);
+  --color-choice-b: rgb(42, 114, 42);
+  --color-choice-c: rgb(77, 77, 182);
+
 }
 
-.text-green {
+.bg-color-a {
+  background-color: var(--color-choice-a);
+}
 
-  color: rgb(155, 235, 155);
+.bg-color-b {
+
+  background-color: var(--color-choice-b);
+}
+
+.bg-color-c {
+
+  background-color: var(--color-choice-c);
 }
 
 /* 
@@ -49,4 +61,44 @@ Ord for størrelse
 
   box-shadow: 1px 1px 8px 4px rgb(22, 22, 22);
   inset: 1px 4px 1px white;
+
+}
+
+.active\:sunken:active {
+
+  box-shadow: inset 1px 1px 2px 2px black;
+}
+
+
+.sunken:active {
+
+  box-shadow: inset 1px 1px 2px 2px black;
+}
+
+/* 
+Innhold layout 
+*/
+
+.flex {
+  display: flex;
+
+}
+
+.flex-column {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-small {
+  gap: 5rem;
+}
+
+/* 
+Ord for effekter
+*/
+
+.hover\:brighten:hover {
+  filter: brightness(2);
+
 }
